@@ -1,647 +1,1161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luke Wallace | Software Engineer</title>
-    <meta
-      name="description"
-      content="Portfolio of Luke Wallace, Computer Science Student and Software Engineer"
-    />
-    <meta property="og:image" content="https://ibb.co/sM9ZvBk" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preload" href="images/data-analysis-bg.webp" as="image" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navbar">
-          <button class="menu-toggle" aria-label="Toggle navigation">
-            <span class="hamburger"></span>
-          </button>
-          <ul class="nav-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section id="home" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              Hi, I'm <span class="highlight">Luke Wallace</span>
-            </h1>
-            <h2 class="hero-subtitle">
-              Computer Science Student & Software Engineer
-            </h2>
-            <p class="hero-text"></p>
-            <p class="hero-text">
-              Computational problem solver focused on building analytical
-              systems with algorithmic efficiency, delivering production level
-              data driven solutions.
-            </p>
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Wallace - Mathematical Research Portfolio</title>
+    <meta name="description" content="Luke Wallace's academic portfolio: From aerospace precision to pure mathematical research">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --paper-white: #FEFEFE;
+            --cream-white: #FAF9F6;
+            --deep-navy: #1B2B44;
+            --warm-gold: #D4A574;
+            --charcoal: #2C3E50;
+            --slate-gray: #5D6D7E;
+            --light-gray: #ECF0F1;
+            --border-gray: #D5DBDB;
+            --text-dark: #212529;
+            --text-medium: #495057;
+            --text-light: #6C757D;
+            
+            --font-serif: "Crimson Text", "Times New Roman", Georgia, serif;
+            --font-sans: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+            --font-mono: "JetBrains Mono", "Courier New", monospace;
+            
+            --max-width: 850px;
+            --line-height: 1.7;
+            --shadow-paper: 0 2px 12px rgba(27, 43, 68, 0.06);
+            --transition: all 0.3s ease;
+        }
 
-          <div class="tech-marquee">
-            <div class="tech-track">
-              <!-- Original Set -->
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                  alt="Python"
-                />
-                <span>Python</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  alt="HTML5"
-                />
-                <span>HTML5</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  alt="CSS3"
-                />
-                <span>CSS3</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript"
-                />
-                <span>JavaScript</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                  alt="PostgreSQL"
-                />
-                <span>PostgreSQL</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
-                  alt="SQLite"
-                />
-                <span>SQLite</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
-                  alt="Flask"
-                />
-                <span>Flask</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
-                  alt="NumPy"
-                />
-                <span>NumPy</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
-                  alt="Pandas"
-                />
-                <span>Pandas</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg"
-                  alt="Matplotlib"
-                />
-                <span>Matplotlib</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
-                  alt="FastAPI"
-                />
-                <span>FastAPI</span>
-              </div>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-              <!-- Duplicated Set for Seamless Looping -->
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                  alt="Python"
-                />
-                <span>Python</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  alt="HTML5"
-                />
-                <span>HTML5</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  alt="CSS3"
-                />
-                <span>CSS3</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="JavaScript"
-                />
-                <span>JavaScript</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                  alt="PostgreSQL"
-                />
-                <span>PostgreSQL</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
-                  alt="SQLite"
-                />
-                <span>SQLite</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
-                  alt="Flask"
-                />
-                <span>Flask</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
-                  alt="NumPy"
-                />
-                <span>NumPy</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
-                  alt="Pandas"
-                />
-                <span>Pandas</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg"
-                  alt="Matplotlib"
-                />
-                <span>Matplotlib</span>
-              </div>
-              <div class="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
-                  alt="FastAPI"
-                />
-                <span>FastAPI</span>
-              </div>
-            </div>
-          </div>
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-serif);
+            background: var(--cream-white);
+            color: var(--text-dark);
+            line-height: var(--line-height);
+        }
+
+        /* Navigation */
+        .paper-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(254, 254, 254, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--warm-gold);
+            z-index: 1000;
+            padding: 0.8rem 0;
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .paper-logo {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+
+        .section-nav {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .nav-item {
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            color: var(--text-medium);
+            cursor: pointer;
+            padding: 0.4rem 0.8rem;
+            border-radius: 3px;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(27, 43, 68, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .nav-item:hover::before {
+            left: 100%;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            color: var(--deep-navy);
+            background: rgba(27, 43, 68, 0.05);
+            border-color: var(--border-gray);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(27, 43, 68, 0.1);
+        }
+
+        /* Paper Container */
+        .paper-container {
+            max-width: var(--max-width);
+            margin: 70px auto 2rem;
+            background: var(--paper-white);
+            box-shadow: var(--shadow-paper);
+            min-height: calc(100vh - 100px);
+        }
+
+        /* Condensed Header */
+        .paper-header {
+            text-align: center;
+            padding: 1.5rem 3rem 1rem;
+            border-bottom: 2px solid var(--warm-gold);
+        }
+
+        .paper-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--deep-navy);
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+        }
+
+        .paper-subtitle {
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            color: var(--slate-gray);
+            font-style: italic;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .author-info {
+            font-family: var(--font-sans);
+            color: var(--text-medium);
+            font-size: 0.9rem;
+        }
+
+        .author-name {
+            color: var(--deep-navy);
+            font-weight: 600;
+        }
+
+        .affiliation {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Simple page headers */
+        .simple-header {
+            padding: 1.5rem 3rem 0.5rem;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .simple-header .section-number {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            color: var(--slate-gray);
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .simple-header .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--deep-navy);
+            margin: 0;
+            border: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Page Content */
+        .page-content {
+            padding: 1.5rem 3rem;
+            overflow-y: auto;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Section Styling */
+        .section-number {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            color: var(--slate-gray);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--deep-navy);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--warm-gold);
+            padding-bottom: 0.5rem;
+        }
+
+        .subsection-title {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin: 1.5rem 0 1rem 0;
+            font-style: italic;
+        }
+
+        /* Abstract */
+        .abstract {
+            background: var(--cream-white);
+            padding: 1.5rem;
+            border-left: 3px solid var(--warm-gold);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        .abstract-label {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            color: var(--deep-navy);
+            font-style: normal;
+            display: block;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        /* Mathematical Moment Highlight */
+        .mathematical-moment {
+            background: linear-gradient(135deg, var(--cream-white), #F8F6F0);
+            border: 2px solid var(--warm-gold);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .mathematical-moment::before {
+            content: "∀";
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--paper-white);
+            padding: 0 0.5rem;
+            font-size: 1.2rem;
+            color: var(--warm-gold);
+            font-weight: bold;
+        }
+
+        .moment-title {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--deep-navy);
+            margin-bottom: 0.8rem;
+            font-style: italic;
+        }
+
+        .moment-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-dark);
+            text-indent: 0;
+        }
+
+        /* Text Styles */
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            text-indent: 1.5em;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        p:first-child,
+        .no-indent {
+            text-indent: 0;
+        }
+
+        .research-question {
+            font-style: italic;
+            color: var(--slate-gray);
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 1.5rem 0;
+            text-indent: 0;
+            font-weight: 500;
+        }
+
+        /* Compact Grid Layouts */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+
+        .four-column {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+
+        /* Research Items - Compact */
+        .research-item {
+            background: var(--paper-white);
+            border-left: 2px solid var(--warm-gold);
+            padding: 0.8rem 1rem;
+            margin-bottom: 0.8rem;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .research-item:hover {
+            background: var(--cream-white);
+            border-left-width: 3px;
+            transform: translateX(2px);
+            box-shadow: 0 2px 8px rgba(27, 43, 68, 0.1);
+        }
+
+        .item-category {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--slate-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+
+        .item-title {
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--deep-navy);
+            margin-bottom: 0.4rem;
+            line-height: 1.3;
+        }
+
+        .item-description {
+            color: var(--text-medium);
+            font-size: 0.8rem;
+            line-height: 1.4;
+            text-indent: 0;
+        }
+
+        /* Current Research Highlight */
+        .current-research {
+            background: linear-gradient(135deg, #FFF9E6, var(--cream-white));
+            border: 1px solid var(--warm-gold);
+            border-radius: 3px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .current-research-title {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            color: var(--deep-navy);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .current-research-detail {
+            font-size: 0.85rem;
+            color: var(--text-medium);
+            text-indent: 0;
+        }
+
+        /* Academic Links */
+        .academic-link {
+            color: var(--deep-navy);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted var(--slate-gray);
+            transition: var(--transition);
+        }
+
+        .academic-link:hover {
+            color: var(--charcoal);
+            border-bottom-style: solid;
+        }
+
+        /* Academic Buttons */
+        .academic-btn {
+            font-family: var(--font-sans);
+            background: var(--paper-white);
+            color: var(--deep-navy);
+            border: 2px solid var(--slate-gray);
+            padding: 0.7rem 1.4rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            border-radius: 3px;
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .academic-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(27, 43, 68, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .academic-btn:hover::before {
+            left: 100%;
+        }
+
+        .academic-btn:hover {
+            background: var(--cream-white);
+            border-color: var(--deep-navy);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(27, 43, 68, 0.15);
+        }
+
+        .academic-btn:disabled {
+            background: var(--light-gray);
+            color: var(--text-light);
+            border-color: var(--border-gray);
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Page Controls */
+        .page-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            border-top: 1px solid var(--border-gray);
+            background: var(--cream-white);
+        }
+
+        .page-info {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .page-nav-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: var(--cream-white);
+            padding: 1.5rem;
+            border: 1px solid var(--border-gray);
+            margin-top: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid var(--border-gray);
+            background: var(--paper-white);
+            font-family: var(--font-sans);
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--warm-gold);
+            box-shadow: 0 0 0 2px rgba(212, 165, 116, 0.2);
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+            font-family: var(--font-serif);
+        }
+
+        /* Journey Timeline */
+        .journey-timeline {
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid var(--warm-gold);
+        }
+
+        .timeline-item {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            background: var(--warm-gold);
+            border-radius: 50%;
+            border: 2px solid var(--paper-white);
+        }
+
+        .timeline-date {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--slate-gray);
+            font-weight: 600;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            color: var(--deep-navy);
+            font-size: 0.9rem;
+            margin: 0.2rem 0;
+        }
+
+        .timeline-desc {
+            font-size: 0.8rem;
+            color: var(--text-medium);
+            line-height: 1.4;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-nav {
+                display: none;
+            }
+            
+            .paper-container {
+                margin: 60px 0.5rem 1rem;
+            }
+            
+            .paper-header,
+            .page-content,
+            .page-controls,
+            .simple-header {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            
+            .paper-title {
+                font-size: 1.3rem;
+            }
+            
+            .two-column,
+            .three-column,
+            .four-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .paper-nav,
+            .page-controls {
+                display: none !important;
+            }
+            
+            .paper-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+            }
+            
+            .page {
+                display: block !important;
+                page-break-after: always;
+            }
+            
+            .page:last-child {
+                page-break-after: auto;
+            }
+            
+            body {
+                background: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="paper-nav">
+        <div class="nav-container">
+            <div class="paper-logo">Luke Wallace | Mathematical Research Portfolio</div>
+            <ul class="section-nav">
+                <li class="nav-item active" data-page="abstract">Abstract</li>
+                <li class="nav-item" data-page="research">Research</li>
+                <li class="nav-item" data-page="teaching">Teaching</li>
+                <li class="nav-item" data-page="experience">Philosophy</li>
+                <li class="nav-item" data-page="vision">Contact</li>
+            </ul>
         </div>
-      </section>
+    </nav>
 
-      <section id="projects" class="projects">
-        <div class="container">
-          <h2 class="section-title">My Projects</h2>
-          <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="ai">AI</button>
-            <button class="filter-btn" data-filter="systems">Systems</button>
-            <button class="filter-btn" data-filter="data">Data Science</button>
-          </div>
-          <div class="project-grid">
-            <div class="project-card" data-category="data">
-              <div class="project-image">
-                <img
-                  src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Data-Science-vs.-Big-Data-vs.jpg"
-                  alt="Job Market Dashboard"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Interactive Job Market Dashboard</h3>
-                <p class="project-desc">
-                  Built a Python-based dashboard with Streamlit, pandas,
-                  matplotlib, and SQLite to analyze and visualize trends in tech
-                  job postings.
+    <div class="paper-container">
+        <!-- Page 1: Abstract & Introduction -->
+        <div class="page active" id="abstract">
+            <header class="paper-header">
+                <h1 class="paper-title">
+                    From Aerospace Precision to Pure Mathematical Research
+                </h1>
+                <p class="paper-subtitle">
+                    A Journey of Intellectual Transformation and Academic Ambition
                 </p>
-                <div class="project-tech">
-                  <span>Python</span>
-                  <span>Streamlit</span>
-                  <span>SQLite</span>
-                  <span>Data Visualization</span>
+                
+                <div class="author-info">
+                    <span class="author-name">Luke Wallace</span>
                 </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/lwallaceos/Python-SQL-data-visualization"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    View Details
-                  </a>
+                <div class="affiliation">
+                    University of New Hampshire, Department of Mathematics & Statistics<br>
+                    Pure Mathematics, B.S. 2028
                 </div>
-              </div>
-            </div>
+            </header>
 
-            <div class="project-card" data-category="ai">
-              <div class="project-image">
-                <span class="project-badge">Under Construction</span>
-                <img
-                  src="https://cdn.pixabay.com/photo/2024/06/20/08/29/chef-8841562_640.jpg"
-                  alt="AI Cooking App"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">AI-Powered Cooking App</h3>
-                <p class="project-desc">
-                  Developed an intelligent recipe application using HTML, CSS,
-                  JavaScript, and Python that recommends meals based on
-                  available ingredients.
-                </p>
-                <div class="project-tech">
-                  <span>Python</span>
-                  <span>JavaScript</span>
-                  <span>AI Integration</span>
-                  <span>Web Development</span>
+            <div class="page-content">
+                <div class="abstract">
+                    <span class="abstract-label">Abstract</span>
+                    This portfolio documents the intellectual evolution from high school uncertainty through aerospace manufacturing precision to computational studies and ultimately pure mathematical research. The journey demonstrates how systematic analytical training in high-precision engineering environments, combined with computer science foundations, catalyzes deep engagement with abstract mathematical structures. Central to this transformation was the pivotal experience of constructing the irrationality proof for √2, which crystallized a lifelong commitment to mathematical research and education. This work presents current research contributions in finite group theory, innovative computational projects, and pedagogical innovations, while outlining clear ambitions for graduate study and research contributions at premier institutions.
                 </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/lwallaceos/cookAi"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    View Details
-                  </a>
-                </div>
-              </div>
-            </div>
 
-            <div class="project-card" data-category="systems">
-              <div class="project-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_640.jpg"
-                  alt="Programming Language"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Custom Programming Language</h3>
-                <p class="project-desc">
-                  Engineered and developed a unique programming language with a
-                  focus on usability and efficiency, implementing core language
-                  features.
+                <div class="section-number">1.</div>
+                <h2 class="section-title">Introduction: The Precision-to-Abstraction Pipeline</h2>
+                
+                <p class="research-question">
+                    "How does the journey from aerospace precision through computational thinking lead to transformative engagement with pure mathematics?"
                 </p>
-                <div class="project-tech">
-                  <span>Python</span>
-                  <span>Compiler Design</span>
-                  <span>Syntax Parsing</span>
-                  <span>Interpreter</span>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/lwallaceos/W-Programming-Language"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    View Details
-                  </a>
-                </div>
-              </div>
-            </div>
+                
+                <p>The intellectual trajectory from uncertain high school graduate through Marine boot camp transformation to dedicated mathematical researcher reveals the extraordinary power of resilience and self-discovery. The journey began with dreams of aerospace engineering, leading to precision manufacturing work that developed systematic analytical skills. However, the defining transformation occurred during Marine boot camp, where despite facing discharge due to a shoulder injury, a profound realization emerged: the mind is the only true limit, and human potential is genuinely endless. Returning with this revolutionary understanding of limitless possibility, the path through community college computer science provided crucial computational foundations. The ultimate transformation came through abstract algebra, where mathematical beauty revealed the perfect vehicle for reaching toward infinite intellectual horizons.</p>
 
-            <div class="project-card" data-category="web">
-              <div class="project-image">
-                <img
-                  src="https://cdn.pixabay.com/photo/2020/02/24/04/26/web-design-4875188_960_720.jpg"
-                  alt="Portfolio Website"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Responsive Portfolio Website</h3>
-                <p class="project-desc">
-                  Designed and developed a fully responsive personal portfolio
-                  website using HTML, CSS, and JavaScript with dynamic features
-                  interactivity.
-                </p>
-                <div class="project-tech">
-                  <span>HTML5</span>
-                  <span>CSS3</span>
-                  <span>JavaScript</span>
-                  <span>Responsive Design</span>
+                <div class="journey-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-title">High School Graduation → Aerospace Industry</div>
+                        <div class="timeline-desc">Graduated high school in 2023, immediately entered precision aerospace manufacturing with dreams of becoming an engineer</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2023 - February 2024</div>
+                        <div class="timeline-title">Aerospace Precision Experience</div>
+                        <div class="timeline-desc">Developed systematic analytical skills and quality control expertise while working toward aerospace engineering goals</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">May - June 2024</div>
+                        <div class="timeline-title">Marine Boot Camp → Life-Changing Realization</div>
+                        <div class="timeline-desc">Pursued military path to aerospace engineering; shoulder injury led to discharge but emerged with profound understanding: the mind is the only limit</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024-2025</div>
+                        <div class="timeline-title">Community College Computer Science Excellence</div>
+                        <div class="timeline-desc">Driven by limitless potential mindset, achieved 3.9 GPA while discovering computational foundations and abstract algebra</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025-Present</div>
+                        <div class="timeline-title">UNH Pure Mathematics → Transfer Ambitions</div>
+                        <div class="timeline-desc">Currently pursuing pure mathematics with independent group theory research, targeting MIT transfer for graduate research</div>
+                    </div>
                 </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/lwallaceos/portfoliowebsite"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    View Details
-                  </a>
-                </div>
-              </div>
-            </div>
 
-            <div class="project-card" data-category="systems">
-              <div class="project-image">
-                <img
-                  src="https://sudoku-puzzles.net/wp-content/puzzles/butterfly-sudoku/easy/1.png"
-                  alt="Sudoku Solver"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Sudoku Solver</h3>
-                <p class="project-desc">
-                  Developed an efficient Sudoku solver using Python with a
-                  backtracking algorithm that can solve any valid Sudoku puzzle
-                  difficulty in milliseconds.
-                </p>
-                <div class="project-tech">
-                  <span>Python</span>
-                  <span>Algorithms</span>
-                  <span>Backtracking</span>
-                  <span>Problem Solving</span>
+                <p>This path demonstrates that mathematical research excellence can emerge from diverse intellectual backgrounds. The precision required in aerospace manufacturing translates directly to the rigor demanded in formal proof construction. The algorithmic thinking developed through computer science provides crucial computational perspectives on abstract mathematical structures. Most importantly, the combination of practical problem-solving experience with theoretical abstraction creates a unique research perspective that bridges pure mathematics with computational applications.</p>
+
+                <div class="mathematical-moment">
+                    <div class="moment-title">The Proof That Set My Mind Free</div>
+                    <p class="moment-text">
+                        In my first week of pure mathematics, after basic logic and set theory, I sat down to construct the irrationality proof for √2. In that moment, something extraordinary happened—my brain was completely set free and allowed to run. The logical structure revealed itself with perfect clarity, and I became utterly immersed in the beauty of abstract reasoning. This was the moment I knew that mathematical research was not just an academic pursuit, but the liberation of human potential itself. From there, I self-studied into abstract algebra and pursued analytic number theory under Professor Shen's guidance, discovering that pure mathematics is where infinite possibility meets rigorous truth.
+                    </p>
                 </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/lwallaceos/Sudoku-solver"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    View Details
-                  </a>
-                </div>
-              </div>
+
+                <p>The ultimate goal extends beyond personal academic achievement to meaningful contribution to mathematical knowledge and education. With clear ambitions for transfer to a premier research institution and subsequent PhD studies, this journey represents not merely academic progression but a commitment to advancing both theoretical understanding and pedagogical innovation in pure mathematics.</p>
             </div>
-          </div>
         </div>
-      </section>
 
-      <section id="experience" class="experience">
-        <div class="container">
-          <h2 class="section-title">Professional Experience</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-img">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/D4E0BAQHfTadqq5q6xg/company-logo_200_200/company-logo_200_200/0/1716398004677/turbocam_inc_logo?e=2147483647&v=beta&t=eF6bs92mH8Yl6yIjJXHKivaW5VmqG_Kf8DaFQC74Vy8"
-                  alt="Turbocam International"
-                  loading="lazy"
-                />
-              </div>
-              <div class="timeline-content">
-                <h3>Turbocam International - Aerospace B2</h3>
-                <h4>
-                  Aerospace Inspector and Operator | June 2023 – February 2024
-                </h4>
-                <ul>
-                  <li>
-                    Inspected aerospace components for AS9100 and ISO 9001
-                    compliance, upholding rigorous quality standards
-                  </li>
-                  <li>
-                    Debugged C++ and C# code for Nikon laser systems and CMMs to
-                    improve performance and reliability
-                  </li>
-                  <li>
-                    Operated and maintained Electrochemical Machining (ECM)
-                    systems for high-precision part production
-                  </li>
-                  <li>
-                    Developed proficiency in Geometric Dimensioning and
-                    Tolerancing (GD&T) for blueprint interpretation
-                  </li>
-                  <li>
-                    Used precision measurement tools including micrometers,
-                    profilometers, and radius gauges
-                  </li>
-                </ul>
-              </div>
+        <!-- Page 2: Mathematical Research -->
+        <div class="page" id="research">
+            <div class="simple-header">
+                <div class="section-number">2.</div>
+                <h2 class="section-title">Mathematical Research and Computational Innovation</h2>
             </div>
 
-            <div class="timeline-item">
-              <div class="timeline-img">
-                <img
-                  src="https://www.greatbay.edu/wp-content/uploads/2019/10/cropped-logo-1.png"
-                  alt="GBCC STEM Club"
-                  loading="lazy"
-                />
-              </div>
-              <div class="timeline-content">
-                <h3>GBCC STEM Club</h3>
-                <h4>President | 2024-2025</h4>
-                <ul>
-                  <li>
-                    Led initiatives to promote technical learning and
-                    collaboration, increasing club membership by 50%
-                  </li>
-                  <li>
-                    Engineered and designed a full-scale escape room project
-                    applying systems engineering principles
-                  </li>
-                  <li>
-                    Organized workshops and events to enhance STEM education and
-                    hands-on learning experiences
-                  </li>
-                </ul>
-              </div>
+            <div class="page-content">
+                <div class="current-research">
+                    <div class="current-research-title">Current Research Focus</div>
+                    <p class="current-research-detail">
+                        Independent finite group theory research under Professor Shen guidance, with self-directed exploration into analytic number theory. Research focused on discovering and defining new mathematical objects through computational group theory applications. Working to bridge abstract algebraic structures with algorithmic innovation for both theoretical advancement and practical computational efficiency.
+                    </p>
+                </div>
+
+                <h3 class="subsection-title">Pure Mathematical Research</h3>
+                
+                <div class="three-column">
+                    <div class="research-item">
+                        <div class="item-category">Group Theory</div>
+                        <h4 class="item-title">Rubik's Cube Group Analysis</h4>
+                        <p class="item-description">
+                            Comprehensive modeling of 3×3×3 cube as finite group, investigating permutation structures and algorithmic move complexity.
+                        </p>
+                    </div>
+                    
+                    <div class="research-item">
+                        <div class="item-category">Applied Algebra</div>
+                        <h4 class="item-title">Motion Group Theory</h4>
+                        <p class="item-description">
+                            Novel application of group theory to model complex pendular dynamics through transformation groups.
+                        </p>
+                    </div>
+                    
+                    <div class="research-item">
+                        <div class="item-category">Number Theory</div>
+                        <h4 class="item-title">Euclidean Domain Efficiency</h4>
+                        <p class="item-description">
+                            Investigation from group structures through ring theory to golden ratio computational efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="four-column">
+                    <div class="research-item">
+                        <div class="item-category">Algebra</div>
+                        <h4 class="item-title">Subgroup Generators</h4>
+                        <p class="item-description">Analysis of generator elements and computational applications in cyclic groups.</p>
+                    </div>
+                    
+                    <div class="research-item">
+                        <div class="item-category">Morphisms</div>
+                        <h4 class="item-title">Homomorphism Theory</h4>
+                        <p class="item-description">Group homomorphisms and kernel structures with algorithmic implementation.</p>
+                    </div>
+                    
+                    <div class="research-item">
+                        <div class="item-category">Geometry</div>
+                        <h4 class="item-title">Dihedral Groups</h4>
+                        <p class="item-description">Symmetries in polygons for computational approximations of π.</p>
+                    </div>
+                    
+                    <div class="research-item">
+                        <div class="item-category">Analysis</div>
+                        <h4 class="item-title">Density Results</h4>
+                        <p class="item-description">Pigeonhole principle applications to irrational number distribution.</p>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Computational Projects</h3>
+
+                <div class="two-column">
+                    <div class="research-item">
+                        <div class="item-category">Data Science</div>
+                        <h4 class="item-title">Advanced Job Market Analytics Platform</h4>
+                        <p class="item-description">
+                            Comprehensive analytical dashboard leveraging real-time market data to evaluate CS/Data Science career trajectories. Features predictive modeling, salary optimization algorithms, and geographic trend analysis with interactive visualization capabilities for strategic career planning.
+                            <br><span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-light);">Python, Streamlit, Pandas, SQLite, Machine Learning</span>
+                            <br><a href="https://github.com/lwallaceos/Python-SQL-data-visualization" class="academic-link">Repository</a>
+                        </p>
+                    </div>
+                    
+                    <div class="research-item">
+                        <div class="item-category">AI Application</div>
+                        <h4 class="item-title">Intelligent Culinary Optimization System</h4>
+                        <p class="item-description">
+                            AI-powered platform utilizing machine learning algorithms to minimize food waste through intelligent ingredient-to-recipe matching. Features difficulty optimization, nutritional analysis, and personalized recommendation engine with adaptive learning capabilities based on user preferences and dietary constraints.
+                            <br><span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-light);">HTML, CSS, Python, JavaScript, AI/ML, Natural Language Processing</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="two-column">
+                    <div class="research-item">
+                        <div class="item-category">Algorithm Optimization</div>
+                        <h4 class="item-title">High-Performance Sudoku Solver</h4>
+                        <p class="item-description">
+                            Advanced backtracking algorithm with constraint satisfaction optimization, achieving millisecond-level solution times through strategic pruning techniques and heuristic ordering. Implementation demonstrates practical application of combinatorial optimization principles.
+                            <br><span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-light);">Python, Advanced Algorithms, Constraint Satisfaction</span>
+                            <br><a href="https://github.com/lwallaceos/Sudoku-solver" class="academic-link">Algorithm Documentation</a>
+                        </p>
+                    </div>
+                    
+                    <div class="research-item">
+                        <div class="item-category">Language Design</div>
+                        <h4 class="item-title">Complete Programming Language Implementation</h4>
+                        <p class="item-description">
+                            Full-featured programming language built from ground up, including custom lexical analyzer, recursive descent parser, and tree-walking interpreter. Features include variable binding, control flow, functions, and closures with comprehensive error handling and debugging capabilities.
+                            <br><span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-light);">Python, Compiler Theory, Language Design</span>
+                            <br><a href="https://github.com/lwallaceos/W-Programming-Language" class="academic-link">Language Specification</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
 
-      <section id="education" class="education">
-        <div class="container">
-          <h2 class="section-title">Education</h2>
-          <div class="education-grid">
-            <div class="education-card">
-              <div class="education-img">
-                <img
-                  src="https://innovation.unh.edu/sites/default/files/styles/max_width_480px/public/media/2024-05/unhbrand_cs_b_rgb_r_small_0.png?itok=6ElDyOAF"
-                  alt="University of New Hampshire"
-                  loading="lazy"
-                />
-              </div>
-              <div class="education-info">
-                <h3>University of New Hampshire (UNH)</h3>
-                <p><strong>Degree:</strong> Bachelor of Science</p>
-                <p><strong>Major:</strong> Computer Science</p>
-                <p><strong>Minor:</strong> Data Science</p>
-                <p><strong>Expected Graduation:</strong> 2028</p>
-                <p>
-                  <strong>Relevant Coursework:</strong> Data Structures &
-                  Algorithms, Stats and Mathematical Proof, Software Engineering
-                </p>
-              </div>
+        <!-- Page 3: Teaching & Leadership -->
+        <div class="page" id="teaching">
+            <div class="simple-header">
+                <div class="section-number">3.</div>
+                <h2 class="section-title">Teaching Excellence and Leadership Innovation</h2>
             </div>
 
-            <div class="education-card">
-              <div class="education-img">
-                <img
-                  src="https://yt3.googleusercontent.com/iqmQgLPSVkeVN8D3ujhLV8fK17C6zcqHnF2nnbf6TtR9PfXUS67CtgRKQWzK5mx0ORKLfIwde-M=s900-c-k-c0x00ffffff-no-rj"
-                  alt="Great Bay Community College"
-                  loading="lazy"
-                />
-              </div>
-              <div class="education-info">
-                <h3>Great Bay Community College (GBCC)</h3>
-                <p><strong>Attended:</strong> 2024-2025</p>
-                <p><strong>Completed:</strong> 37 credits</p>
-                <p><strong>Honors:</strong> Phi Theta Kappa Honor Society</p>
-                <p><strong>Leadership:</strong>President of STEM Club</p>
-                <p>
-                  <strong>Key Courses:</strong> Object Oriented Programming,
-                  Calculus, Python
-                </p>
-              </div>
-            </div>
-          </div>
+            <div class="page-content">
+                <h3 class="subsection-title">Educational Philosophy and Leadership Vision</h3>
+                
+                <p>Mathematics education represents the profound responsibility of helping each individual discover their unique intellectual gifts and pathway to greatness. Every student possesses distinctive cognitive strengths waiting to be unlocked through personalized engagement and individualized mathematical communication. The ultimate mission transcends academic achievement: to become the educator who helps students discover not just mathematical concepts, but their own infinite potential and authentic intellectual voice.</p>
 
-          <div class="skills-section">
-            <h3 class="skills-title">Technical Skills</h3>
-            <div class="skills-grid">
-              <div class="skill-category">
-                <h4>Programming Languages</h4>
-                <ul>
-                  <li>Python (NumPy, Pandas, Matplotlib)</li>
-                  <li>JavaScript (ES6+)</li>
-                  <li>HTML5</li>
-                  <li>SQL (SQLite, PostgreSQL)</li>
-                  <li>CSS</li>
-                </ul>
-              </div>
-              <div class="skill-category">
-                <h4>Frameworks & Tools</h4>
-                <ul>
-                  <li>Flask, FastAPI (Backend Development)</li>
-                  <li>Streamlit (Data Applications)</li>
-                  <li>Git, GitHub (Version Control)</li>
-                  <li>VS Code, PyCharm (Development)</li>
-                  <li>Linux, Bash (Systems)</li>
-                </ul>
-              </div>
-              <div class="skill-category">
-                <h4>Core Competencies</h4>
-                <ul>
-                  <li>Algorithm Design & Analysis</li>
-                  <li>Data Structures & Optimization</li>
-                  <li>Debugging & Problem Solving</li>
-                  <li>Applied Mathematics</li>
-                  <li>Software Design Patterns</li>
-                </ul>
-              </div>
+                <div class="mathematical-moment">
+                    <div class="moment-title">Teaching Philosophy: Discovering Hidden Potential</div>
+                    <p class="moment-text">
+                        True education is the art of helping people become who they were always meant to be. Every student represents a universe of possibility—some will find their calling in elegant group theory symmetries, others in computational applications, still others in pure abstract reasoning. The educator's role is not to impose a single path, but to illuminate multiple pathways and help each individual recognize which resonates with their deepest intellectual nature.
+                    </p>
+                </div>
+
+                <div class="two-column">
+                    <div class="research-item">
+                        <div class="item-category">Calculus Education</div>
+                        <h4 class="item-title">Small Group Instruction</h4>
+                        <p class="item-description">
+                            Facilitated intensive calculus study groups at Great Bay Community College, emphasizing conceptual understanding over procedural memorization. Methodology focused on helping students develop personal connections to mathematical concepts through individualized explanation techniques.
+                        </p>
+                    </div>
+                    
+                    <div class="research-item">
+                        <div class="item-category">STEM Leadership</div>
+                        <h4 class="item-title">Transformative Club Growth & Engineering Innovation</h4>
+                        <p class="item-description">
+                            Elected STEM Club president, achieving exponential growth from zero to 8+ active members through personalized engagement strategies that utilized individual student interests. Developed comprehensive curriculum covering circuitry design, hardware engineering, and embedded systems programming. Led collaborative engineering projects including complete escape room design featuring integrated electronic components, sensor arrays, and interactive puzzle systems with custom microcontroller programming.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="research-item">
+                    <div class="item-category">Educational Access Initiative</div>
+                    <h4 class="item-title">Comprehensive STEM Accessibility Program</h4>
+                    <p class="item-description">
+                        Designed and distributed complete educational robotics kits to underprivileged schools throughout the region, directly impacting underserved student populations who lacked access to advanced STEM resources. Initiative involved full project lifecycle management: engineering design specifications, component sourcing and procurement, assembly coordination, custom programming development for educational modules, and comprehensive instructional material creation. Program successfully democratized access to hands-on robotics education, fostering STEM engagement and inspiring the next generation of technical innovators through practical, project-based learning experiences.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
 
-      <section id="contact" class="contact">
-        <div class="container">
-          <h2 class="section-title">Get In Touch</h2>
-          <div class="contact-content">
-            <div class="contact-info">
-              <h3 class="contact-subtitle">Contact Information</h3>
-              <p>
-                Feel free to reach out for collaboration opportunities, job
-                inquiries, or just to connect!
-              </p>
-              <ul class="contact-details">
-                <li>
-                  <span class="icon email"></span>
-                  <span>lukewallace70@gmail.com</span>
-                </li>
-                <li>
-                  <span class="icon phone"></span>
-                  <span>+1 (603) 978-6091</span>
-                </li>
-                <li>
-                  <span class="icon location"></span>
-                  <span>Greater Boston Area, NH</span>
-                </li>
-              </ul>
-              <div class="social-links">
-                <a
-                  href="https://www.linkedin.com/in/lukewallacecs/"
-                  class="social-link"
-                  aria-label="LinkedIn"
-                  target="_blank"
-                >
-                  <span class="icon linkedin"></span>
-                </a>
-                <a
-                  href="https://github.com/lwallaceos?tab=overview&from=2025-04-01&to=2025-04-02"
-                  class="social-link"
-                  aria-label="GitHub"
-                  target="_blank"
-                >
-                  <span class="icon github"></span>
-                </a>
-              </div>
+        <!-- Page 4: Philosophical Foundation -->
+        <div class="page" id="experience">
+            <div class="simple-header">
+                <div class="section-number">4.</div>
+                <h2 class="section-title">Philosophical Foundation and Mathematical Transcendence</h2>
             </div>
-            <form
-              id="contact-form"
-              action="https://formspree.io/f/xvgkwwpo"
-              method="POST"
-              class="contact-form"
-            >
-              <div class="form-group">
-                <input type="text" id="name" name="Name" required />
-                <label for="name">Name</label>
-              </div>
-              <div class="form-group">
-                <input type="email" id="email" name="email" required />
-                <label for="email">Email</label>
-              </div>
-              <div class="form-group">
-                <input type="text" id="subject" name="subject" required />
-                <label for="subject">Subject</label>
-              </div>
-              <div class="form-group">
-                <textarea id="message" name="message" required></textarea>
-                <label for="message">Message</label>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-            </form>
-          </div>
+
+            <div class="page-content">
+                <h3 class="subsection-title">The Beauty of Human Limitations and Mathematical Transcendence</h3>
+                
+                <p>Mathematics represents humanity's most profound method for transcending predicted barriers and exploring realms of abstraction that extend far beyond basic understanding. The beauty of human limitations lies not in their restriction, but in their capacity to be systematically overcome through rigorous thought and intentional exploration. Each mathematical proof becomes an act of transcendence—a deliberate step beyond what was previously known into territories that pave the way for future discovery.</p>
+
+                <div class="mathematical-moment">
+                    <div class="moment-title">Intentional Piety in Mathematical Pursuit</div>
+                    <p class="moment-text">
+                        Approaching mathematical proof construction requires a form of intentional reverence—not worship of mathematics itself, but deep respect for the process of discovery and the responsibility that comes with expanding human knowledge. This intentional piety manifests as careful attention to logical structure, humble acceptance of initial confusion, and patient dedication to understanding that emerges through sustained engagement with abstract concepts. Every proof written carries the potential to illuminate new pathways for future mathematicians.
+                    </p>
+                </div>
+
+                <p>The journey from aerospace precision through military revelation to pure mathematical research illustrates how apparent limitations become launching points for transcendence. Aerospace manufacturing taught that precision emerges through systematic attention to detail. Military training revealed that the only true limitations are those we impose upon ourselves. Computer science demonstrated how abstract structures can be implemented to solve concrete problems. Pure mathematics synthesizes these insights: rigorous precision applied to abstract structures transcends practical limitations and reaches toward infinite possibility.</p>
+
+                <h3 class="subsection-title">Proof Construction as Philosophical Practice</h3>
+
+                <p>Writing mathematical proofs requires embracing both the beauty and necessity of human limitations while simultaneously working to transcend them. Each step in a proof acknowledges what we currently know while carefully extending that knowledge through logical reasoning. The process demands intellectual humility—recognizing that our understanding is always incomplete—combined with ambitious vision that reaches toward deeper truths about mathematical reality.</p>
+
+                <p>The transformative power of proof construction lies in its capacity to reveal that barriers which seem insurmountable often dissolve under systematic analysis. The irrationality proof for √2, which crystallized my commitment to mathematical research, exemplifies this transcendence: apparent numerical relationships that resist rational expression reveal deeper structural truths about mathematical systems. This pattern repeats throughout mathematics—limitations in one framework become doorways to more comprehensive understanding.</p>
+
+                <h3 class="subsection-title">Personal Journey as Mathematical Foundation</h3>
+                
+                <p>The trajectory from uncertain high school graduate through transformative military experience to dedicated mathematical researcher demonstrates how diverse life experiences converge to create unique research perspectives. Each phase contributed essential philosophical foundations: aerospace precision work revealed that excellence emerges through systematic attention to minute details; military training provided the profound realization that human potential is genuinely limitless and that the only barriers are self-imposed; computer science studies demonstrated how abstract logical structures translate into concrete problem-solving capabilities.</p>
+
+                <p>This convergence culminated in the discovery that pure mathematics represents the perfect synthesis of all previous insights—rigorous precision applied to abstract structures that transcend practical limitations while reaching toward infinite intellectual horizons. The varied background creates resilience for confronting mathematical challenges and provides deep conviction that any intellectual barrier can be systematically overcome through sustained effort and clear thinking.</p>
+
+                <div class="mathematical-moment">
+                    <div class="moment-title">Stepping Into Authentic Being</div>
+                    <p class="moment-text">
+                        The ultimate goal extends beyond academic achievement to becoming who I was truly meant to be. Each step of this journey—from aerospace precision through military revelation to mathematical discovery—represents movement toward authentic intellectual identity. Pure mathematics provides the perfect vehicle for this self-actualization: it demands both humility in the face of vast unknown territories and confidence that human reasoning can systematically explore these territories to expand the boundaries of knowledge.
+                    </p>
+                </div>
+
+                <p>The philosophical approach to mathematical research emphasizes that dreaming big is not only justified but necessary. If limitations are primarily self-imposed, then why not pursue the most ambitious possible goals? This perspective drives research vision toward fundamental contributions that advance mathematical understanding while helping students discover their own capacity for transcending apparent limitations. The combination of diverse practical experience with deep philosophical conviction creates the foundation for meaningful contributions to both mathematical knowledge and mathematical education.</p>
+            </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; <span id="year"></span> Luke Wallace. All rights reserved.</p>
-        <a href="#" class="back-to-top" aria-label="Back to top">
-          <span class="icon arrow-up"></span>
-        </a>
-      </div>
-    </footer>
+        <!-- Page 5: Research Vision & Contact -->
+        <div class="page" id="vision">
+            <div class="simple-header">
+                <div class="section-number">5.</div>
+                <h2 class="section-title">Research Vision and Academic Correspondence</h2>
+            </div>
 
-    <div class="modal" id="project-modal">
-      <div class="modal-content">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <div class="modal-body"></div>
-      </div>
+            <div class="page-content">
+                <h3 class="subsection-title">Future Research Directions and Impact Vision</h3>
+                
+                <p>The ultimate research ambition centers on making fundamental contributions to mathematical understanding that transcend traditional disciplinary boundaries. By leveraging the unique perspective gained through aerospace precision, computational thinking, and philosophical depth, future research will focus on discovering mathematical structures that illuminate both abstract theoretical questions and practical problems in physics and engineering. Success means advancing mathematical knowledge in ways that open new pathways for understanding our universe while simultaneously helping students realize their unlimited potential.</p>
+
+                <div class="mathematical-moment">
+                    <div class="moment-title">Vision for Mathematical Impact</div>
+                    <p class="moment-text">
+                        True success encompasses both theoretical advancement and human development. The goal is to make discoveries that advance mathematical understanding while creating educational approaches that help students transcend their perceived limitations and discover their authentic intellectual calling. Research should bridge pure mathematical beauty with practical applications that contribute to our understanding of physical reality, while teaching should transform lives by revealing the infinite potential that exists within every individual.
+                    </p>
+                </div>
+
+                <p>The integration of diverse background experiences provides unique advantages for both research and education. Aerospace precision training ensures attention to rigorous detail essential for proof construction. Military experience provides resilience for confronting challenging problems and conviction that apparent barriers can be systematically overcome. Computational skills enable exploration of mathematical structures through algorithmic implementation. Most importantly, the philosophical understanding of limitless human potential creates the foundation for helping students discover their own capacity for mathematical transcendence.</p>
+
+                <h3 class="subsection-title">Academic Leadership and Recognition</h3>
+                
+                <div class="current-research">
+                    <div class="current-research-title">Institutional Leadership and Academic Excellence</div>
+                    <p class="current-research-detail">
+                        <strong>Phi Theta Kappa Honor Society:</strong> Recognition among top 5% of community college students for sustained academic excellence<br>
+                        <strong>President's List Achievement:</strong> Multiple semesters of 3.8+ GPA demonstrating consistent high-level performance<br>
+                        <strong>STEM Club President:</strong> Elected leadership role, grew membership from zero to 8+ active participants through personalized engagement strategies<br>
+                        <strong>Student Government Collaboration:</strong> Worked with institutional leadership to plan campus activities and coordinate educational events<br>
+                        <strong>Music Club Secretary:</strong> Administrative leadership demonstrating interdisciplinary engagement and organizational capabilities
+                    </p>
+                </div>
+
+                <div class="research-item">
+                    <div class="item-category">June 2023 - February 2024</div>
+                    <h4 class="item-title">Turbocam International - Aerospace Precision Manufacturing</h4>
+                    <p class="item-description">
+                        <strong>Precision Engineering Experience:</strong> Extensive aerospace manufacturing training with direct engineering collaboration and quality control oversight<br>
+                        <strong>Technical Systems:</strong> CMM and laser measurement system optimization using C++ and C#<br>
+                        <strong>Standards Compliance:</strong> AS9100 and ISO 9001 quality assurance for critical flight components<br>
+                        <strong>Analytical Foundation:</strong> Micrometer-level precision work that developed systematic thinking essential for mathematical proof construction
+                    </p>
+                </div>
+
+                <h3 class="subsection-title">Academic Correspondence</h3>
+                
+                <div class="two-column">
+                    <div>
+                        <h4 class="item-title">Professional Contact</h4>
+                        <div class="research-item">
+                            <p class="item-description">
+                                <strong>Email:</strong> lukewallace70@gmail.com<br>
+                                <strong>Phone:</strong> +1 (603) 978-6091<br>
+                                <strong>Institution:</strong> University of New Hampshire<br>
+                                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lukewallacecs/" class="academic-link">linkedin.com/in/lukewallacecs</a><br>
+                                <strong>GitHub:</strong> <a href="https://github.com/lwallaceos" class="academic-link">github.com/lwallaceos</a><br><br>
+                                <em>Available for research collaboration, transfer consultation, and academic discourse in pure mathematics with computational applications.</em>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="item-title">Academic Inquiry</h4>
+                        <div class="contact-form">
+                            <form action="https://formspree.io/f/xvgkwwpo" method="POST">
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Academic Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" placeholder="Research Topic or Transfer Inquiry" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Research collaboration, transfer opportunity, or academic discussion..." required></textarea>
+                                </div>
+                                <button type="submit" class="academic-btn">Submit Inquiry</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="current-research">
+                    <div class="current-research-title">Core Life Philosophy</div>
+                    <p class="current-research-detail">
+                        <strong>Live Life to the Fullest:</strong> You have one life—explore and utilize your unique abilities while deepening self-understanding. Live truly as yourself, not according to others' expectations. Failure and setbacks are integral parts of the process, not obstacles. Chaos and peace are interdependent forces on the same path to success. The butterfly effect means every decision matters, and taking that first step into adversity creates infinite possibilities for growth and transformation.
+                    </p>
+                </div>
+
+                <p><em>Ultimate Vision:</em> To become both a researcher who advances mathematical knowledge and an educator who transforms lives through mathematical beauty. Success measured not only in theorems proved and papers published, but in students inspired and human potential realized through the transformative power of mathematical discovery.</p>
+            </div>
+        </div>
+
+        <!-- Page Controls -->
+        <div class="page-controls">
+            <div class="page-info">
+                Page <span id="current-page">1</span> of <span id="total-pages">5</span>
+            </div>
+            <div class="page-nav-buttons">
+                <button class="academic-btn" id="prev-btn" onclick="previousPage()" disabled>← Previous</button>
+                <button class="academic-btn" id="next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
     </div>
 
-    <script src="main.js" defer></script>
-    <script src="contact.js" defer></script>
-    <script src="interactive.js" defer></script>
-  </body>
+    <script>
+        let currentPage = 1;
+        const totalPages = 5;
+        
+        const pages = [
+            { id: 'abstract', nav: 'abstract' },
+            { id: 'research', nav: 'research' },
+            { id: 'teaching', nav: 'teaching' },
+            { id: 'experience', nav: 'experience' },
+            { id: 'vision', nav: 'vision' }
+        ];
+
+        function showPage(pageNumber) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show current page
+            document.getElementById(pages[pageNumber - 1].id).classList.add('active');
+            
+            // Update navigation
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            const activeNav = document.querySelector(`[data-page="${pages[pageNumber - 1].nav}"]`);
+            if (activeNav) {
+                activeNav.classList.add('active');
+            }
+            
+            // Update page info
+            document.getElementById('current-page').textContent = pageNumber;
+            document.getElementById('total-pages').textContent = totalPages;
+            
+            // Update navigation buttons
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            
+            if (prevBtn) {
+                prevBtn.disabled = pageNumber === 1;
+            }
+            if (nextBtn) {
+                nextBtn.disabled = pageNumber === totalPages;
+            }
+            
+            currentPage = pageNumber;
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                showPage(currentPage + 1);
+            }
+        }
+
+        function previousPage() {
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
+        }
+
+        // Navigation item clicks
+        document.querySelectorAll('.nav-item').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                showPage(index + 1);
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault();
+                nextPage();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                previousPage();
+            } else if (e.key >= '1' && e.key <= '5') {
+                e.preventDefault();
+                showPage(parseInt(e.key));
+            }
+        });
+
+        // Form submission enhancement
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.textContent = 'Processing...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        submitBtn.textContent = 'Submit Inquiry';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                }
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            showPage(1);
+        });
+
+        // Print functionality
+        window.addEventListener('beforeprint', function() {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'block';
+                page.style.pageBreakAfter = 'always';
+            });
+        });
+
+        window.addEventListener('afterprint', function() {
+            showPage(currentPage);
+        });
+    </script>
+</body>
 </html>
